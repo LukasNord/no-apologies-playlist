@@ -7,10 +7,8 @@ import BaseRouter from './routes';
 import { Request, Response } from 'express';
 import { jwtCookieProps } from '@shared';
 
-
 // Init express
 const app = express();
-
 
 // Add middleware/settings/routes to express.
 app.use(logger('dev'));
@@ -22,7 +20,7 @@ app.use('/api', BaseRouter);
 
 
 /**
- * Serve front-end content.
+ * Serve front-end content. Eventually going to be a SPA on the front. Slap that on later.
  */
 const viewsDir = path.join(__dirname, 'views');
 app.set('views', viewsDir);

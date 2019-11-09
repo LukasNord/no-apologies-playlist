@@ -54,3 +54,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * All the amazing folks who make OSS available for hobbyists like ourselves to use to build fun things.
+
+* Shout out to [Sean Maxwell](https://github.com/seanpmaxwell/express-generator-typescript) for a quick Express/Node with TypeScript template. Saved me time!

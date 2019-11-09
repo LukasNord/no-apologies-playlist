@@ -1,6 +1,10 @@
 {
   "name": "no-apologies-playlist",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "engines":{
+    "node": ">=12.13.0"
+  },
+  "author": "Lukas Nord & Per Kvanbeck",
   "scripts": {
     "build": "node ./util/build.js",
     "lint": "tslint --project \"tsconfig.json\"",
