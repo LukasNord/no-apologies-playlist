@@ -3,6 +3,7 @@ import express from 'express';
 import logger from 'morgan';
 import path from 'path';
 import BaseRouter from './routes';
+import cors from 'cors';
 
 import { Request, Response } from 'express';
 import { jwtCookieProps } from '@shared';
@@ -16,6 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
+
+// base API route.
 app.use('/api', BaseRouter);
 
 
